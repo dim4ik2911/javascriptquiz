@@ -6,8 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Quiz</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <main>
+      <header class="header">
+        <img src="img/js-logo.svg" alt="Javascript Logo" />
+        <h1>Quiz</h1>
+      </header>
+      <div class="question" id="question1">
+        <h1>1. Inside which HTML element do we put the JavaScript?</h1>
+        <div class="list">
+          <button>scripting</button>
+          <button>javascript</button>
+          <button>js</button>
+          <button class="right-answer">script</button>
+        </div>
+      </div>
+      <div class="question" id="question2">
+        <h1>2. How do you write "Hello World" in an alert box?</h1>
+        <div class="list">
+          <button class="right-answer">msg("Hello World");</button>
+          <button>alert("Hellow World");</button>
+          <button>alertBox("Hellow World");</button>
+          <button>msgBox("Hello World");</button>
+        </div>
+      </div>
+      <div class="question" id="question3">
+        <h1>3. How to write an IF statement in JavaScript?</h1>
+        <div class="list">
+          <button class="right-answer">if (i == 5)</button>
+          <button>if i = 5</button>
+          <button>if i = 5 then</button>
+          <button>if i == 5 then</button>
+        </div>
+      </div>
+      <div class="question" id="question4">
+        <h1>4. How does a FOR loop start?</h1>
+        <div class="list">
+          <button class="right-answer">for (i = 0; i <= 5; i++)</button>
+          <button>for (i - 0; i <= 5)</button>
+          <button>for (i <= 5; i++)</button>
+          <button>for i = 1 to 5</button>
+        </div>
+      </div>
+      <div class="question" id="question5">
+        <h1>5. How do you round the number 7.25, to the nearest integer?</h1>
+        <div class="list">
+          <button class="right-answer">Math.rnd(7.25)</button>
+          <button>rnd(7.25)</button>
+          <button>round(7.25)</button>
+          <button>Math.round(7.25)</button>
+        </div>
+      </div>
+      <div class="question" id="question6">
+        <h1>
+          6. How do you find the number with the highest value of x and y?
+        </h1>
+        <div class="list">
+          <button class="right-answer">top(x, y)</button>
+          <button>Math.max(x, y)</button>
+          <button>ceil(x, y)</button>
+          <button>Math.ceil(x, y)</button>
+        </div>
+      </div>
+      <div class="question" id="question7">
+        <h1>7. Which event occurs when the user clicks on an HTML element?</h1>
+        <div class="list">
+          <button class="right-answer">onclick</button>
+          <button>onmouseclick</button>
+          <button>onchange</button>
+          <button>onmouseover</button>
+        </div>
+      </div>
+      <div class="question" id="question8">
+        <h1>8. Which operator is used to assign a value to a variable?</h1>
+        <div class="list">
+          <button class="right-answer">=</button>
+          <button>*</button>
+          <button>x</button>
+          <button>-</button>
+        </div>
+      </div>
+      <div class="question" id="question9">
+        <h1>9. What will the following code return: Boolean(10 > 9)</h1>
+        <div class="list">
+          <button class="right-answer">NaN</button>
+          <button>false</button>
+          <button>true</button>
+          <button>undefined</button>
+        </div>
+      </div>
+      <div class="question" id="question10">
+        <h1>10. How do you call a function named "myFunction"?</h1>
+        <div class="list">
+          <button class="right-answer">call myFunction()</button>
+          <button>myFunction()</button>
+          <button>call function myFunction()</button>
+          <button>return myFunction()</button>
+        </div>
+      </div>
+      <footer class="footer">
+        <h1>Your score is 8 / 10</h1>
+      </footer>
+    </main>
+
     <script src="./main.js"></script>
   </body>
 </html>
