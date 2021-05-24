@@ -10,16 +10,17 @@ const questions9 = document.getElementById("question9");
 const questions10 = document.getElementById("question10");
 const result = document.getElementById("result");
 
+const rightArr = [];
+//array to count right ansers
+
 const checkAnswer = (event) => {
   const target = event.target;
-  const rightArr = [];
   if (target.classList.contains("right-answer")) {
     target.style.border = ".5rem solid #00B806";
     target.style.backgroundColor = "#0ACF48";
-
-    rightArr.push(target.innerHTML);
+    rightArr.push(true);
     console.log(rightArr);
-    result.innerHTML = `Your score is ${rightArr.length} / 10`;
+    result.innerHTML = `Your score is ${rightArr.length} / 10!`;
   } else if (target.classList.contains("wrong-answer")) {
     target.style.border = ".5rem solid #D60000";
     target.style.backgroundColor = "#F00201";
