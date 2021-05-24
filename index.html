@@ -21,46 +21,46 @@
       <div class="question" id="question1">
         <h1>1. Inside which HTML element do we put the JavaScript?</h1>
         <div class="list">
-          <button>scripting</button>
-          <button>javascript</button>
-          <button>js</button>
+          <button class="wrong-answer">scripting</button>
+          <button class="wrong-answer">javascript</button>
+          <button class="wrong-answer">js</button>
           <button class="right-answer">script</button>
         </div>
       </div>
       <div class="question" id="question2">
         <h1>2. How do you write "Hello World" in an alert box?</h1>
         <div class="list">
-          <button class="right-answer">msg("Hello World");</button>
-          <button>alert("Hellow World");</button>
-          <button>alertBox("Hellow World");</button>
-          <button>msgBox("Hello World");</button>
+          <button class="wrong-answer">msg("Hello World");</button>
+          <button class="right-answer">alert("Hellow World");</button>
+          <button class="wrong-answer">alertBox("Hellow World");</button>
+          <button class="wrong-answer">msgBox("Hello World");</button>
         </div>
       </div>
       <div class="question" id="question3">
         <h1>3. How to write an IF statement in JavaScript?</h1>
         <div class="list">
           <button class="right-answer">if (i == 5)</button>
-          <button>if i = 5</button>
-          <button>if i = 5 then</button>
-          <button>if i == 5 then</button>
+          <button class="wrong-answer">if i = 5</button>
+          <button class="wrong-answer">if i = 5 then</button>
+          <button class="wrong-answer">if i == 5 then</button>
         </div>
       </div>
       <div class="question" id="question4">
         <h1>4. How does a FOR loop start?</h1>
         <div class="list">
           <button class="right-answer">for (i = 0; i <= 5; i++)</button>
-          <button>for (i - 0; i <= 5)</button>
-          <button>for (i <= 5; i++)</button>
-          <button>for i = 1 to 5</button>
+          <button class="wrong-answer">for (i - 0; i <= 5)</button>
+          <button class="wrong-answer">for (i <= 5; i++)</button>
+          <button class="wrong-answer">for i = 1 to 5</button>
         </div>
       </div>
       <div class="question" id="question5">
         <h1>5. How do you round the number 7.25, to the nearest integer?</h1>
         <div class="list">
-          <button class="right-answer">Math.rnd(7.25)</button>
-          <button>rnd(7.25)</button>
-          <button>round(7.25)</button>
-          <button>Math.round(7.25)</button>
+          <button class="wrong-answer">Math.rnd(7.25)</button>
+          <button class="wrong-answer">rnd(7.25)</button>
+          <button class="wrong-answer">round(7.25)</button>
+          <button class="right-answer">Math.round(7.25)</button>
         </div>
       </div>
       <div class="question" id="question6">
@@ -68,50 +68,50 @@
           6. How do you find the number with the highest value of x and y?
         </h1>
         <div class="list">
-          <button class="right-answer">top(x, y)</button>
-          <button>Math.max(x, y)</button>
-          <button>ceil(x, y)</button>
-          <button>Math.ceil(x, y)</button>
+          <button class="wrong-answer">top(x, y)</button>
+          <button class="right-answer">Math.max(x, y)</button>
+          <button class="wrong-answer">ceil(x, y)</button>
+          <button class="wrong-answer">Math.ceil(x, y)</button>
         </div>
       </div>
       <div class="question" id="question7">
         <h1>7. Which event occurs when the user clicks on an HTML element?</h1>
         <div class="list">
           <button class="right-answer">onclick</button>
-          <button>onmouseclick</button>
-          <button>onchange</button>
-          <button>onmouseover</button>
+          <button class="wrong-answer">onmouseclick</button>
+          <button class="wrong-answer">onchange</button>
+          <button class="wrong-answer">onmouseover</button>
         </div>
       </div>
       <div class="question" id="question8">
         <h1>8. Which operator is used to assign a value to a variable?</h1>
         <div class="list">
           <button class="right-answer">=</button>
-          <button>*</button>
-          <button>x</button>
-          <button>-</button>
+          <button class="wrong-answer">*</button>
+          <button class="wrong-answer">x</button>
+          <button class="wrong-answer">-</button>
         </div>
       </div>
       <div class="question" id="question9">
         <h1>9. What will the following code return: Boolean(10 > 9)</h1>
         <div class="list">
-          <button class="right-answer">NaN</button>
-          <button>false</button>
-          <button>true</button>
-          <button>undefined</button>
+          <button class="wrong-answer">NaN</button>
+          <button class="wrong-answer">false</button>
+          <button class="right-answer">true</button>
+          <button class="wrong-answer">undefined</button>
         </div>
       </div>
       <div class="question" id="question10">
         <h1>10. How do you call a function named "myFunction"?</h1>
         <div class="list">
           <button class="right-answer">call myFunction()</button>
-          <button>myFunction()</button>
-          <button>call function myFunction()</button>
-          <button>return myFunction()</button>
+          <button class="wrong-answer">myFunction()</button>
+          <button class="wrong-answer">call function myFunction()</button>
+          <button class="wrong-answer">return myFunction()</button>
         </div>
       </div>
       <footer class="footer">
-        <h1>Your score is 8 / 10</h1>
+        <h1 id="result"></h1>
       </footer>
     </main>
 
