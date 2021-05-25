@@ -59,6 +59,10 @@ const restartQuiz = () => {
       result.innerHTML = `Just do it!`;
     }
   }
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 };
 
 restart.addEventListener("click", restartQuiz);
