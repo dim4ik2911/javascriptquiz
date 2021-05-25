@@ -64,10 +64,19 @@ main {
 .footer {
   height: 100vh;
   width: 100%;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(0deg, white 0%, white 50%, #fef576 100%);
+}
+.footer .restart {
+  text-align: center;
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  bottom: 1rem;
 }
