@@ -107,11 +107,12 @@ var restartQuiz = function restartQuiz() {
         once: true
       });
     }
-  } // window.scrollTo({
-  //   top: 0,
-  //   behavior: "smooth",
-  // });
+  }
 
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 };
 
 restart.addEventListener("click", restartQuiz); // { once: true }
