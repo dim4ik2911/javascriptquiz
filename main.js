@@ -71,13 +71,18 @@ const restartQuiz = () => {
       question10.addEventListener("click", checkAnswer, { once: true });
     }
   }
+};
+
+const scrollOnTop = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 };
-
-restart.addEventListener("click", restartQuiz);
+restart.addEventListener("click", scrollOnTop);
+restart.addEventListener("click", function () {
+  setTimeout(restartQuiz, 1000);
+});
 
 // { once: true }
 // { once: true }

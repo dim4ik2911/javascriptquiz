@@ -108,14 +108,19 @@ var restartQuiz = function restartQuiz() {
       });
     }
   }
+};
 
+var scrollOnTop = function scrollOnTop() {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 };
 
-restart.addEventListener("click", restartQuiz); // { once: true }
+restart.addEventListener("click", scrollOnTop);
+restart.addEventListener("click", function () {
+  setTimeout(restartQuiz, 1000);
+}); // { once: true }
 // { once: true }
 // { once: true }
 // { once: true }
