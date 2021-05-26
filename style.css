@@ -40,7 +40,6 @@ main {
   justify-content: center;
   align-items: center;
   margin: 8rem 0;
-  background-color: red;
 }
 .question h1 {
   margin-bottom: 3rem;
@@ -51,7 +50,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  background-color: greenyellow;
 }
 .question .list button {
   width: 25rem;
