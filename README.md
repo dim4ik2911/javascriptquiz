@@ -13,6 +13,6 @@
 </br>
 </br>
 <h3 align="center">JavaScript is made using:</h3>
-<h3 align="center">1 object to control the 4 main values of calculator: displayed value, first operand, second operand and operator</h3>
-  <h3 align="center">1 addEventListener  on click to control 5 main functions</h3>
-<h3 align="center">6 functions in total to manage work of calculator</h3>
+<h3 align="center">1 main function is in charge of game score and clicked answers</h3>
+  <h3 align="center">10 function to avoid doubleclicking and a chance to change an answer to right one</h3>
+<h3 align="center">2 functions to restart a game</h3>
