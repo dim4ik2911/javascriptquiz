@@ -8,8 +8,8 @@
 <h3 align="center">HTML body part is made of 12 sections(landing page - 1 section, questions - 10 sections, footer with result - 1 section</h3>
 </br>
 </br>
-<h3 align="center">CSS is made using SASS preprocessor for having opportunity to use variables and nesting</h3>
-<h3 align="center">CSS Grid is used for layout</h3>
+<h3 align="center">CSS is made using SASS preprocessor</h3>
+<h3 align="center">CSS Flexbox is used for layout</h3>
 </br>
 </br>
 <h3 align="center">JavaScript is made using:</h3>
