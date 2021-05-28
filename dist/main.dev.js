@@ -24,7 +24,6 @@ var checkAnswer = function checkAnswer(event) {
     target.style.border = ".3rem solid #00B806";
     target.style.backgroundColor = "#0ACF48";
     rightArr.push(true);
-    console.log(rightArr);
     result.innerHTML = "Your score is ".concat(rightArr.length, " / 10!");
   } else if (target.classList.contains("wrong-answer")) {
     target.style.border = ".3rem solid #D60000";
@@ -119,17 +118,7 @@ function removeClick10(event) {
 
 
 var restartQuiz = function restartQuiz() {
-  console.log(buttons);
-
-  for (var i = 0; i < buttons.length; i++) {
-    if (buttons[i].classList.contains("right-answer") || buttons[i].classList.contains("wrong-answer")) {
-      buttons[i].style.border = ".3rem solid #000";
-      buttons[i].style.backgroundColor = "#fff";
-      result.innerHTML = "Just do it!";
-      rightArr = [];
-      question1.addEventListener("click", checkAnswer);
-    }
-  }
+  location.reload();
 }; //function used to move on top when button restart clicked
 
 
@@ -142,26 +131,26 @@ var scrollOnTop = function scrollOnTop() {
 
 
 question1.addEventListener("click", checkAnswer);
-question1.addEventListener("click", removeClick1);
 question2.addEventListener("click", checkAnswer);
-question2.addEventListener("click", removeClick2);
 question3.addEventListener("click", checkAnswer);
-question3.addEventListener("click", removeClick3);
 question4.addEventListener("click", checkAnswer);
-question4.addEventListener("click", removeClick4);
 question5.addEventListener("click", checkAnswer);
-question5.addEventListener("click", removeClick5);
 question6.addEventListener("click", checkAnswer);
-question6.addEventListener("click", removeClick6);
 question7.addEventListener("click", checkAnswer);
-question7.addEventListener("click", removeClick7);
 question8.addEventListener("click", checkAnswer);
-question8.addEventListener("click", removeClick8);
 question9.addEventListener("click", checkAnswer);
-question9.addEventListener("click", removeClick9);
 question10.addEventListener("click", checkAnswer);
-question10.addEventListener("click", removeClick10);
 restart.addEventListener("click", scrollOnTop);
 restart.addEventListener("click", function () {
   setTimeout(restartQuiz, 1000);
 });
+question1.addEventListener("click", removeClick1);
+question2.addEventListener("click", removeClick2);
+question3.addEventListener("click", removeClick3);
+question4.addEventListener("click", removeClick4);
+question5.addEventListener("click", removeClick5);
+question6.addEventListener("click", removeClick6);
+question7.addEventListener("click", removeClick7);
+question8.addEventListener("click", removeClick8);
+question9.addEventListener("click", removeClick9);
+question10.addEventListener("click", removeClick10);
