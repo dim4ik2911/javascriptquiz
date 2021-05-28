@@ -1,3 +1,4 @@
+//variables declared
 const questions1 = document.getElementById("question1");
 const questions2 = document.getElementById("question2");
 const questions3 = document.getElementById("question3");
@@ -9,9 +10,12 @@ const questions8 = document.getElementById("question8");
 const questions9 = document.getElementById("question9");
 const questions10 = document.getElementById("question10");
 const result = document.getElementById("result");
-
 let rightArr = [];
+const restart = document.getElementById("restart");
+const rightAnswer = document.getElementsByClassName("right-answer");
+const buttons = document.getElementsByTagName("button");
 
+//function to check if thr answer is right
 const checkAnswer = (event) => {
   const target = event.target;
   if (target.classList.contains("right-answer")) {
@@ -29,6 +33,7 @@ const checkAnswer = (event) => {
   result.innerHTML = `Your score is ${rightArr.length} / 10`;
 };
 
+//functions to remove click from section, if click happened so the person cannot change the answer
 function removeClick1(event) {
   const target = event.target;
   if (
@@ -120,6 +125,32 @@ function removeClick10(event) {
   }
 }
 
+//function to restart a quiz
+const restartQuiz = () => {
+  console.log(buttons);
+  for (let i = 0; i < buttons.length; i++) {
+    if (
+      buttons[i].classList.contains("right-answer") ||
+      buttons[i].classList.contains("wrong-answer")
+    ) {
+      buttons[i].style.border = ".3rem solid #000";
+      buttons[i].style.backgroundColor = "#fff";
+      result.innerHTML = `Just do it!`;
+      rightArr = [];
+      question1.addEventListener("click", checkAnswer);
+    }
+  }
+};
+
+//function used to move on top when button restart clicked
+const scrollOnTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+//event listeners
 question1.addEventListener("click", checkAnswer);
 question1.addEventListener("click", removeClick1);
 question2.addEventListener("click", checkAnswer);
@@ -140,34 +171,6 @@ question9.addEventListener("click", checkAnswer);
 question9.addEventListener("click", removeClick9);
 question10.addEventListener("click", checkAnswer);
 question10.addEventListener("click", removeClick10);
-
-const restart = document.getElementById("restart");
-const rightAnswer = document.getElementsByClassName("right-answer");
-const buttons = document.getElementsByTagName("button");
-
-const restartQuiz = () => {
-  // const buttons = document.getElementsByTagName("button");
-  console.log(buttons);
-  for (let i = 0; i < buttons.length; i++) {
-    if (
-      buttons[i].classList.contains("right-answer") ||
-      buttons[i].classList.contains("wrong-answer")
-    ) {
-      buttons[i].style.border = ".3rem solid #000";
-      buttons[i].style.backgroundColor = "#fff";
-      result.innerHTML = `Just do it!`;
-      rightArr = [];
-      question1.addEventListener("click", checkAnswer);
-    }
-  }
-};
-
-const scrollOnTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
 restart.addEventListener("click", scrollOnTop);
 restart.addEventListener("click", function () {
   setTimeout(restartQuiz, 1000);
